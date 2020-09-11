@@ -8,10 +8,12 @@
        <!-- Component Example -->
       <VuetifyLogo/>
     </v-app-bar>
+    
 
     <!-- Body -->
     <v-content light>
       <nuxt /> 
+      <Tabs/>
     </v-content>
     
     <!-- Footer -->
