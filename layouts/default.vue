@@ -13,7 +13,7 @@
     <!-- Body -->
     <v-content light>
       <nuxt /> 
-      <Tabs/>
+      <Chips/>
     </v-content>
     
     <!-- Footer -->
@@ -35,5 +35,6 @@ export default {}
 
    #inspire {
     background-color: white;
+    color: black;
   }
 </style>
