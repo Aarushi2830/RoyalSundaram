@@ -6,7 +6,7 @@
         <v-row justify="center">
           <h1>How to stir fry chicken</h1>
         </v-row>
-        <Horizontalcard/>
+        <Form/>
       </v-container>
     </v-content>
   </div>
