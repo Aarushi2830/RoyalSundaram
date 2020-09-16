@@ -2,6 +2,12 @@
   <div>
     <v-content>
       It Worked!
+      <v-container>
+        <v-row justify="center">
+          <h1>How to stir fry chicken</h1>
+        </v-row>
+        <Horizontalcard/>
+      </v-container>
     </v-content>
   </div>
 </template>
