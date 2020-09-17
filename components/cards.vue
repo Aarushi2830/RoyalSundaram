@@ -30,11 +30,11 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-toolbar>
-
+<!-- v-for loops the components within a component -->
     <v-container fluid>
       <v-row dense>
         <v-col
-          v-for="card in cards"
+          v-for="card in cards"  
           :key="card.title"
           :cols="card.flex"
         >
@@ -72,6 +72,7 @@
 
 
 <script>
+
   export default {
     data: () => ({
       cards: [

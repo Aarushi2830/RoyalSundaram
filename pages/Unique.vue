@@ -1,14 +1,11 @@
 <template>
   <div>
     <v-content>
-      <Tabs2/>
       <v-container>
         <v-row justify="left">
           <h1>Leisure Trip</h1>
-        </v-row>
-        <Steps/>
-    
-        <Customaction/>
+        </v-row>      
+        <Unique/>
       </v-container>
     </v-content>
   </div>

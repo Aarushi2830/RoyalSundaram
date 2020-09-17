@@ -18,7 +18,8 @@
         <v-card-text>
           <v-container>
             <v-row>
-              <v-col cols="12" sm="6" md="4">
+              <!-- Sizes for different devices -->
+              <v-col cols="12" sm="6" md="4"> 
                 <v-text-field label="Legal first name*" required></v-text-field>
               </v-col>
               <v-col cols="12" sm="6" md="4">
@@ -36,7 +37,10 @@
                 <v-text-field label="Email*" required></v-text-field>
               </v-col>
               <v-col cols="12">
+                <!-- Remove type="password" to remove bullets -->
                 <v-text-field label="Password*" type="password" required></v-text-field>
+                <!-- on adding type=number it shows the increase and decrease bar -->
+                <v-text-field label="number*" type="number" required></v-text-field>
               </v-col>
               <v-col cols="12" sm="3">
                 <v-select
@@ -46,6 +50,7 @@
                 ></v-select>
               </v-col>
               <v-col cols="12" sm="6">
+                <!-- autocomplete necessary for chip -->
                 <v-autocomplete
                   :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
                   label="Interests"

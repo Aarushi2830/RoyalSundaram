@@ -68,7 +68,8 @@
 </template>
 
 
-<script>
+
+<script> 
   export default {
     data: () => ({
       loading: false,
