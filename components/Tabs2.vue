@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-toolbar
-      color="Jet black"
+      color="blue"
       dark
       flat
     >
@@ -61,20 +61,12 @@
       </template>
     </v-toolbar>
 
-    <v-tabs-items v-model="currentItem">
-      <v-tab-item
-        v-for="item in items.concat(more)"
-        :key="item"
-        :value="'tab-' + item"
-      >
+   
+      
         <v-card flat>
-          <v-card-text>
-            <h2>{{ item }}</h2>
-            {{ text }}
-          </v-card-text>
+          
         </v-card>
-      </v-tab-item>
-    </v-tabs-items>
+   
   </v-card>
 </template>
 

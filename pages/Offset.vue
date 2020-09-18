@@ -4,17 +4,8 @@
       <v-container>
         <v-row justify="left">
           <h1>Leisure Trip</h1>
-        </v-row>
-      <v-row>  
-      <v-col md="4">
-        <Customaction/>
-      </v-col>
-
-      <v-col md="8">
-        <Stepperform/>
-        </v-col>
-        </v-row>
-
+        </v-row>      
+        <Offset/>
       </v-container>
     </v-content>
   </div>

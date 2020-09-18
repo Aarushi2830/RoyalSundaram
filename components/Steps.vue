@@ -1,5 +1,8 @@
 <template>
   <div>
+      <v-card
+    color="blue"
+  ></v-card>
     
     <v-stepper v-model="e1">
       <v-stepper-header>
@@ -28,10 +31,11 @@
         >
           <v-card
             class="mb-12"
-            color="grey lighten-1"
-            height="200px"
+            color="black"
+            height="500px"
             
-          ><Chip/></v-card>
+          ><Chip/>
+          <Travellerform/></v-card>
           
 
           <v-btn
@@ -40,7 +44,7 @@
           >
             Continue
           </v-btn>
-
+         
           <v-btn text>Cancel</v-btn>
         </v-stepper-content>
       </v-stepper-items>
@@ -55,8 +59,12 @@
       return {
         e1: 1,
         steps: 3,
+        stepperform: [
+        { componentName: 'Chip', flex: 12 },
+        { componentName: 'Travellerform', flex: 6 },
+        ],
       }
-    },
+    }, 
 
     watch: {
       steps (val) {
@@ -74,6 +82,6 @@
           this.e1 = n + 1
         }
       },
-    },
+    }, 
   }
 </script>

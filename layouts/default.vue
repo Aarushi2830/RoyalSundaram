@@ -3,18 +3,24 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+    <v-app-bar color= "blue" dark fixed app>
+      <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
       <VuetifyLogo/>
+
+      <v-spacer></v-spacer>
+      <Toolbar/>
+      
     </v-app-bar>
     
 
     <!-- Body -->
+    <v-body color="blue" app>
     <v-content light>
       <nuxt /> 
       <Chips/>
     </v-content>
+    </v-body>
     
     <!-- Footer -->
     <v-footer color="indigo" app>
