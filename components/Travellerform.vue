@@ -4,59 +4,54 @@
     v-model="valid"
     lazy-validation
   >
-    <v-text-field
-      v-model="name"
-      :counter="10"
-      :rules="nameRules"
-      label="Name"
-      required
-    ></v-text-field>
+  <v-container>
+    <v-row justify="center">
+     <v-col cols="12" sm="6" md="8">
+          <v-text-field
+            :rules="nameRules"
+            label="Name"
+            outlined
+            required
+          ></v-text-field>
+        </v-col>
 
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-    ></v-text-field>
+     <v-col cols="12" sm="6" md="8">
+          <v-text-field
+            :rules="emailRules"
+            label="Email id."
+            outlined
+            required
+          ></v-text-field>
+        </v-col>
 
-    <v-select
-      v-model="select"
-      :items="items"
-      :rules="[v => !!v || 'Item is required']"
-      label="Item"
-      required
-    ></v-select>
+     <v-col cols="12" sm="6" md="8">
+          <v-text-field
+           :rules="numberRules"
+            label="Number"
+            outlined
+            required
+          ></v-text-field>
+        </v-col>
 
+    <v-col cols="12" sm="8">
+      <v-card
+      color="black"
+      class="pa 1"
+      >
     <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
       label="Do you agree?"
+      class="pa-1"
       required
     ></v-checkbox>
+  
+    </v-card>
+    </v-col>
+     </v-row>
+    </v-container>
 
-    <v-btn
-      :disabled="!valid"
-      color="success"
-      class="mr-4"
-      @click="validate"
-    >
-      Validate
-    </v-btn>
-
-    <v-btn
-      color="error"
-      class="mr-4"
-      @click="reset"
-    >
-      Reset Form
-    </v-btn>
-
-    <v-btn
-      color="warning"
-      @click="resetValidation"
-    >
-      Reset Validation
-    </v-btn>
+   
   </v-form>
 </template>
 
@@ -87,7 +82,7 @@
 
     methods: {
       validate () {
-        this.$refs.form.validate()
+        this.$refs.form.Validate()
       },
       reset () {
         this.$refs.form.reset()

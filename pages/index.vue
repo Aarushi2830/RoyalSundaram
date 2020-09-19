@@ -2,18 +2,26 @@
   <div>
     <v-content>
       <v-container>
-        <v-row justify="left">
+       <v-row justify="left">
           <h1>Leisure Trip</h1>
-        </v-row>
+          </v-row>
+      </v-container>
+      <v-container>
       <v-row>  
-      <v-col md="4">
+      <v-col md="3">
         <Customaction/>
       </v-col>
 
-      <v-col md="8">
-        <Stepperform/>
+      <v-col md="9">
+        <StepsForm/>
         </v-col>
         </v-row>
+        <v-row>
+           <v-col md="9">
+        <Leisuretrip/>
+        </v-col>
+        </v-row>
+
 
       </v-container>
     </v-content>

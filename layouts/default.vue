@@ -5,11 +5,20 @@
     <!--Header -->
     <v-app-bar color= "blue" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
-       <!-- Component Example -->
+    <!-- Component Example -->
       <VuetifyLogo/>
 
       <v-spacer></v-spacer>
-      <Toolbar/>
+      <Insurance/>
+      <Aboutus/>
+      <Instarenew/>
+      <Contactus/>
+      <Blogs/>
+      <Signin/>
+       <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      
       
     </v-app-bar>
     

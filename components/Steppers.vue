@@ -10,9 +10,11 @@
      
      <v-stepper-items>
        <v-stepper-content step="1">
-        <v-card>
-          <h1>please work</h1>
-        </v-card>
+        <v-card
+           class="mb-12"
+          color="grey lighten-1"
+          height="200px"
+          ></v-card>
           <v-btn
             color="primary"
             @click="currentstep=2"
