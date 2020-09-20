@@ -8,7 +8,7 @@
 
 <style>
 .RoyalSundaramLogo {
-  height: 60px;
-  width: 180px;
+  height:40px;
+  width: 130px;
 }
 </style>

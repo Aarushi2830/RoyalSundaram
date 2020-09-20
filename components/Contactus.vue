@@ -1,6 +1,6 @@
 <template>
      
-        <v-btn text large>Contact us</v-btn>
+        <v-btn text small>Contact us</v-btn>
     
 </template>
 

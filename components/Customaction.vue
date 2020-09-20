@@ -1,8 +1,10 @@
 <template>
+<v-container>
+<v-row col="12" sm=12>
   <v-card
     class="mx-auto"
     max-width="344"
-    color="blue"
+    color="light-blue lighten-1"
   >
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
@@ -14,7 +16,7 @@
     </v-card-title>
 
     <v-card-subtitle>
-      1,000 miles of wonder
+      Your search for high quality overseas travel insurance stops here
     </v-card-subtitle>
 
     
@@ -24,11 +26,15 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, 
+         Travel related risks while you are in a foreign country, like an accident abroad, loss of travel documents, hospitalization due to sickness/accident can turn out to be quite disturbing and at the same time expensive. 
+Royal Sundaram brings to you “Travel Secure”, which is a comprehensive Travel Insurance Plan which offers holistic travel insurance solutions to every discerning traveler.
         </v-card-text>
       </div>
     </v-expand-transition>
   </v-card>
+       <Leisuretrippopup/>
+</v-row>
+</v-container>
 </template>
 
 

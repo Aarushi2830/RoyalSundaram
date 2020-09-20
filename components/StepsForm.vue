@@ -10,6 +10,7 @@
       <v-divider></v-divider>
 
       <v-stepper-step step="3">Traveller details</v-stepper-step>
+      
     </v-stepper-header>
 
     
@@ -23,7 +24,8 @@
         ><Travellerform/></v-card>
 
 <v-row justify="center">
-        <v-btn
+        <v-btn 
+
           color="primary"
           @click="e1 = 2"
           
@@ -38,8 +40,8 @@
         <v-card
           class="mb-12"
           color="black"
-          height="300px"
-        ><Chip/><Datepicker/><Travellersdropdown/></v-card>
+          height="480px"
+        ><Chip/><Placeselection/><Datepicker/><Numberoftravellers/></v-card>
 
       <v-row justify="center">
            <v-btn text
@@ -62,7 +64,7 @@
         <v-card
           class="mb-12"
           color="black"
-          height="250px"
+          height="400px"
         ><Agedropdown/></v-card>
 
        <v-row justify="center">
@@ -93,4 +95,5 @@
       }
     },
   }
+  
 </script>

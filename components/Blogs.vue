@@ -1,6 +1,6 @@
 <template>
        
-        <v-btn text large>blogs</v-btn>
+        <v-btn text small>blogs</v-btn>
     
 </template>
 

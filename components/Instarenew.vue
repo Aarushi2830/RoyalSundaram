@@ -1,6 +1,6 @@
 <template>
       
-        <v-btn text large>Insta renew</v-btn>
+        <v-btn text small>Insta renew</v-btn>
       
 </template>
 

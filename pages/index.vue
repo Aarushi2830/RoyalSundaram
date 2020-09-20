@@ -1,34 +1,32 @@
 <template>
   <div>
     <v-content>
-      <v-container>
+      
        <v-row justify="left">
-          <h1>Leisure Trip</h1>
+          <v-col cols="12" md="4">
+          </v-col>
+          <v-col cols="12" md="4">
+           </v-col>
           </v-row>
-      </v-container>
-      <v-container>
-      <v-row>  
+          <!-- <v-container> -->
+      <v-row justify="center">  
       <v-col md="3">
         <Customaction/>
+        <!-- <Leisuretrippopup/> -->
       </v-col>
-
-      <v-col md="9">
-        <StepsForm/>
-        </v-col>
-        </v-row>
-        <v-row>
-           <v-col md="9">
-        <Leisuretrip/>
-        </v-col>
-        </v-row>
-
-
-      </v-container>
-    </v-content>
+        <v-col cols="12" md="7">
+          <h1>Leisure Trip</h1>
+          <StepsForm/>
+      </v-col>
+      </v-row>
+   </v-content>
   </div>
+  
 </template>
 
+
 <script>
+ 
 </script>
 
 <style> 

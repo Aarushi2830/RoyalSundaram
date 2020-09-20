@@ -27,11 +27,11 @@
         { text: 'delete', callback: () => console.log('delete') },
       ],
       dropdown_edit: [
-        { text: '100%' },
-        { text: '75%' },
-        { text: '50%' },
-        { text: '25%' },
-        { text: '0%' },
+        { text: '1' },
+        { text: '2' },
+        { text: '3' },
+        { text: '4' },
+        { text: '5' },
       ],
     }),
   }
