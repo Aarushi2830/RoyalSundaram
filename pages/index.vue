@@ -11,7 +11,7 @@
           <!-- <v-container> -->
       <v-row justify="center">  
       <v-col md="3">
-        <Customaction/>
+        <Card/>
         <!-- <Leisuretrippopup/> -->
       </v-col>
         <v-col cols="12" md="7">

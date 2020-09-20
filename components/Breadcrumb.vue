@@ -12,6 +12,9 @@
 </template>
 
 <script>
+//false means that the user is not on the page and clicking on it will redirect them to the linked page//
+//true means that the user is currently on that particular web page//
+
   export default {
     data: () => ({
       items: [
@@ -27,7 +30,7 @@
         },
         {
           text: 'Leisure Trip',
-          disabled: false,
+          disabled: true,
           href: 'http://localhost:3000/RoyalSundaram/',
         },
       ],

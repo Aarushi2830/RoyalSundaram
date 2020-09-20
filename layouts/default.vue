@@ -3,6 +3,8 @@
   <v-app id="inspire">
     
     <!--Header -->
+     
+   <!--increases or decreses the height of the header -->
     <v-app-bar height="25" color= "light-blue lighten-1" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
     <!-- Component Example -->
@@ -14,18 +16,19 @@
       <p>New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
      </v-card>
    
-   
+   <!-- extends the height of the nav bar -->
     <template v-slot:extension>
-       <VuetifyLogo/>
+       <RoyalSundaramlogo/>
       <v-spacer></v-spacer>
 
+     <!-- Global nav bar buttons -->
       <Insurancedropdown/>
       <!-- <Insurance/> -->
-      <Aboutus/>
-      <Instarenew/>
-      <Contactus/>
-      <Blogs/>
-      <Signin/>
+      <Aboutusbutton/>
+      <Instarenewbutton/>
+      <Contactusbutton/>
+      <Blogsbutton/>
+      <Signinbutton/>
        <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>

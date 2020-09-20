@@ -21,7 +21,7 @@
           class="mb-12"
           color="black"
           height="450px"
-        ><Travellerform/></v-card>
+        ><Proposerform/></v-card>
 
 <v-row justify="center">
         <v-btn 
@@ -41,7 +41,7 @@
           class="mb-12"
           color="black"
           height="480px"
-        ><Chip/><Placeselection/><Datepicker/><Numberoftravellers/></v-card>
+        ><Countireschip/><Placeselection/><Datepicker/><Numberoftravellers/></v-card>
 
       <v-row justify="center">
            <v-btn text

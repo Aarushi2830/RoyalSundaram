@@ -3,6 +3,7 @@
     <v-menu>
       <template v-slot:activator="{ on: menu, attrs }">
         <v-tooltip bottom>
+          
           <template v-slot:activator="{ on: tooltip }">
             <v-btn
              small
@@ -16,6 +17,7 @@
         </v-tooltip>
       </template>
       <v-list>
+              <!--  v-for loops the items within a particular itm -->
         <v-list-item
           v-for="(item, index) in items"
           :key="index"

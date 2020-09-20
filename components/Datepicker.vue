@@ -11,6 +11,9 @@
           max-width="290px"
           min-width="290px"
         >
+        <!-- first date picker defines the start date of the trip -->
+        <!-- the date is formated to the current day -->
+        <!-- the date get reformatted by clicking on it noticable by the blur around it  -->
           <template v-slot:activator="{ on, attrs }">
             <v-text-field
               v-model="dateFormatted"
@@ -26,7 +29,8 @@
         </v-menu>
 
       </v-col>
-
+<!-- Scale transition provides with a smooth transition of the opening and closing of the datepicker -->
+  
       <v-col cols="12" lg="6">
         <v-menu
           v-model="menu2"
