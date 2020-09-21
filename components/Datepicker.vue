@@ -6,7 +6,7 @@
           ref="menu1"
           v-model="menu1"
           :close-on-content-click="false"
-          transition="scale-transition"
+          transition="scale-y-transition"
           offset-y
           max-width="290px"
           min-width="290px"
@@ -16,12 +16,12 @@
         <!-- the date get reformatted by clicking on it noticable by the blur around it  -->
           <template v-slot:activator="{ on, attrs }">
             <v-text-field
-              v-model="dateFormatted"
+              v-model="date"
               label="Start date of the trip"
               hint="MM/DD/YYYY"
               persistent-hint
               v-bind="attrs"
-              @blur="date = parseDate(dateFormatted)"
+              @blur="date = parseDate(date)"
               v-on="on"
             ></v-text-field>
           </template>
@@ -35,19 +35,20 @@
         <v-menu
           v-model="menu2"
           :close-on-content-click="false"
-          transition="scale-transition"
+          transition="slide-y-transition"
           offset-y
           max-width="290px"
           min-width="290px"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-text-field
-              v-model="computedDateFormatted"
+              v-model="date"
               label="End date of the trip"
               hint="MM/DD/YYYY"
               persistent-hint
               readonly
               v-bind="attrs"
+                @blur="date = parseDate(date)"
               v-on="on"
             ></v-text-field>
           </template>
@@ -68,6 +69,7 @@
       menu1: false,
       menu2: false,
     }),
+    
 
     computed: {
       computedDateFormatted () {

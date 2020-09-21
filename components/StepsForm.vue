@@ -41,7 +41,16 @@
           class="mb-12"
           color="black"
           height="480px"
-        ><Countireschip/><Placeselection/><Datepicker/><Numberoftravellers/></v-card>
+        ><Countrieschip/><Placeselection/>
+         <v-row justify="center">
+           <v-col cols="12" md="4">
+        <Datepicker1/>
+        </v-col>
+          <v-col cols="12" md="4">
+        <Datepicker2/>
+           </v-col>
+         </v-row>
+        <Numberoftravellers/></v-card>
 
       <v-row justify="center">
            <v-btn text

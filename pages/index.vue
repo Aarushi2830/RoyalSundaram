@@ -12,7 +12,7 @@
       <v-row justify="center">  
       <v-col md="3">
         <Card/>
-        <!-- <Leisuretrippopup/> -->
+        <Leisuretripinfo/>
       </v-col>
         <v-col cols="12" md="7">
           <h1>Leisure Trip</h1>
