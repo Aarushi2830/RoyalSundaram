@@ -1,5 +1,6 @@
 <template>
-  <v-stepper v-model="e1">
+  <v-stepper v-model="e1"
+  >
     <v-stepper-header>
       <v-stepper-step :complete="e1 > 1" step="1">Proposer's details</v-stepper-step>
 
@@ -21,6 +22,7 @@
           class="mb-12"
           color="black"
           height="450px"
+          editable
         ><Proposerform/></v-card>
 
 <v-row justify="center">
