@@ -9,7 +9,7 @@
    <!-- required property makes it compulsory for the user to fill the detail and they cannot proceed without filling it -->
    
     <v-row justify="center">
-     <v-col cols="12" sm="6" md="8">
+     <v-col cols="12" sm="6" md="10">
           <v-text-field
             :rules="nameRules"
             label="Name"
@@ -17,8 +17,10 @@
             required
           ></v-text-field>
         </v-col>
+    </v-row>
 
-     <v-col cols="12" sm="6" md="8">
+    <v-row justify="center">
+     <v-col cols="12" sm="6" md="10">
           <v-text-field
             :rules="emailRules"
             label="Email id."
@@ -26,8 +28,10 @@
             required
           ></v-text-field>
         </v-col>
+    </v-row>
 
-     <v-col cols="12" sm="6" md="8">
+     <v-row justify="center">
+     <v-col cols="12" sm="6" md="10">
           <v-text-field
            :rules="numberRules"
             label="Number"
@@ -35,8 +39,10 @@
             required
           ></v-text-field>
         </v-col>
-
-    <v-col cols="12" sm="8">
+     </v-row>  
+     
+      <v-row justify="center">
+    <v-col cols="12" sm="10">
       <v-card
       color="black"
       class="pa 1"
@@ -47,7 +53,8 @@
       label="You accept to receive calls and messages on WhatsApp and Email address"
       class="pa-1"
       required
-    ></v-checkbox>
+    >
+    </v-checkbox>
         </v-card>
      </v-col>
      </v-row>

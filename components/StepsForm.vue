@@ -21,9 +21,15 @@
         <v-card
           class="mb-12"
           color="black"
-          height="450px"
+          height="500px"
           editable
-        ><Proposerform/></v-card>
+        >
+          <v-row justify="center">
+           <v-col cols="12" sm="10" md="10" xs="10">
+        <Proposerform/>
+         </v-col>
+            </v-row>
+            </v-card>
 
 <v-row justify="center">
         <v-btn 
@@ -37,22 +43,34 @@
 </v-row>
 
       </v-stepper-content>
-
       <v-stepper-content step="2">
+        <v-row justify="center">
+           <v-col cols="12" sm="12" md="12" xs="12">
         <v-card
           class="mb-12"
           color="black"
-          height="480px"
-        ><Countrieschip/><Placeselection/>
+          height="570px">
+            <v-row justify="center">
+           <v-col cols="12" sm="10" md="10">
+        <Countrieschip/><Placeselection/>
+           </v-col>
+            </v-row>
          <v-row justify="center">
-           <v-col cols="12" md="4">
+           <v-col cols="12" sm="4" md="4">
         <Datepicker1/>
         </v-col>
-          <v-col cols="12" md="4">
+          <v-col cols="12" sm="4" md="4">
         <Datepicker2/>
            </v-col>
          </v-row>
-        <Numberoftravellers/></v-card>
+          <v-row justify="center">
+           <v-col cols="12" sm="12" md="12">
+        <Numberoftravellers/>
+         </v-col>
+         </v-row>
+         </v-card>
+           </v-col>
+            </v-row>
 
       <v-row justify="center">
            <v-btn text
@@ -76,7 +94,13 @@
           class="mb-12"
           color="black"
           height="400px"
-        ><Agedropdown/></v-card>
+        >
+         <v-row justify="center">
+           <v-col cols="12" sm="12" md="12" >
+        <Agedropdown/>
+         </v-col>
+         </v-row>
+        </v-card>
 
        <v-row justify="center">
            <v-btn text
