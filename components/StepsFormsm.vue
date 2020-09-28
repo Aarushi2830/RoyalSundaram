@@ -49,20 +49,20 @@
         <v-card
           class="mb-12 "
           color="grey darken-4"
-          height="570px"
+          height="800px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
-           <v-col cols="12" sm="10" md="11">
+           <v-col cols="12" sm="12" md="10">
         <Countrieschip/><Placeselection/>
            </v-col>
             </v-row>
          <v-row justify="center">
-           <v-col cols="12" sm="4" md="4">
+           <v-col cols="12" sm="10" md="4">
         <Datepicker1/>
         </v-col>
-          <v-col cols="12" sm="4" md="4">
+          <v-col cols="12" sm="10" md="4">
         <Datepicker2/>
            </v-col>
          </v-row>
@@ -96,7 +96,7 @@
         <v-card
           class="mb-12"
           color="grey darken-4"
-          height="500px"
+          height="620px"
           editable
         >
          <v-row justify="center">

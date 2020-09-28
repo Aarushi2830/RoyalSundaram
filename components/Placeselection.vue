@@ -6,16 +6,16 @@
         <!-- <v-col cols="12" sm="6" md="4"> -->
           <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
            <v-radio-group row v-model="transition" hide-details>
-            <v-col>
+            <v-col cols="12" sm="6" md="3">
             <v-radio value="slide-y-transition" label="Incl. Schengen Excl. America"></v-radio>
-            </v-col>
-             <v-col>
+            </v-col >
+             <v-col cols="12" sm="6" md="3">
             <v-radio value="slide-y-reverse-transition" label="Incl. America Excl. Schengen"></v-radio>
             </v-col>
-            <v-col>
+            <v-col cols="12" sm="6" md="3">
             <v-radio value="slide-x-transition" label="Incl. America Incl. Schengen"></v-radio>
             </v-col>
-            <v-col>
+            <v-col cols="12" sm="6" md="3">
             <v-radio value="slide-x-reverse-transition" label="Excl. America Excl. Schengen"></v-radio>
             </v-col>
            </v-radio-group>

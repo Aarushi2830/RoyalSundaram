@@ -20,7 +20,7 @@
       <v-stepper-content step="1">
         <v-card
           class="mb-12"
-          color="grey darken-4"
+          color="black"
           height="500px"
           editable
         >
@@ -48,13 +48,13 @@
            <v-col cols="12" sm="12" md="12" xs="12"> -->
         <v-card
           class="mb-12 "
-          color="grey darken-4"
-          height="570px"
+          color="black"
+          height="900px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
-           <v-col cols="12" sm="10" md="11">
+           <v-col cols="12" sm="10" md="10">
         <Countrieschip/><Placeselection/>
            </v-col>
             </v-row>
@@ -95,7 +95,7 @@
       <v-stepper-content step="3">
         <v-card
           class="mb-12"
-          color="grey darken-4"
+          color="black"
           height="500px"
           editable
         >

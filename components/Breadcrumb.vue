@@ -19,6 +19,7 @@
     data: () => ({
       items: [
         {
+        
           text: 'Home',
           disabled: false,
           href: 'breadcrumbs_dashboard',
@@ -30,7 +31,7 @@
         },
         {
           text: 'Leisure Trip',
-          disabled: true,
+          disabled: false,
           href: 'http://localhost:3000/RoyalSundaram/',
         },
       ],

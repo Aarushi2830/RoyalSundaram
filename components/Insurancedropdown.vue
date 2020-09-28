@@ -7,17 +7,21 @@
           <template v-slot:activator="{ on: tooltip }">
             <v-btn
              small
-              color="light-blue lighten-1"
+              color="white"
               dark
               v-bind="attrs"
               v-on="{ ...tooltip, ...menu }"
-            >Insurance</v-btn>
+            ><p span class="insurance">
+              Insurance
+              </p>
+              </v-btn>
           </template>
           <span>Click</span>
         </v-tooltip>
       </template>
       <v-list>
               <!--  v-for loops the items within a particular itm -->
+              
         <v-list-item
           v-for="(item, index) in items"
           :key="index"
@@ -47,3 +51,11 @@
     }),
   }
 </script>
+
+<style> 
+ 
+  .insurance {
+    color: #707070;
+  }
+  
+</style>

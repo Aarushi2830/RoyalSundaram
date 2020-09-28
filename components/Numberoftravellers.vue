@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <v-col cols="12" sm="4">
+      <v-col cols="12" sm="10">
 
       <p>Select the number of Travellers</p>
     

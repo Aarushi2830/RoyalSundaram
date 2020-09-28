@@ -1,37 +1,77 @@
 <template>
   <!--Your App Starts Here -->
   <v-app id="inspire">
-    
+    <!-- <v-navigation-drawer v-model="slideNav">
+      <v-list>
+        <v-list-item-title v-for="item in menuItems" :key="item.title">
+        </v-list-item-title>
+      </v-list> -->
     <!--Header -->
      
    <!--increases or decreses the height of the header -->
-    <v-app-bar height="25" color= "light-blue lighten-1" dark fixed app>
+    <v-app-bar height="25" color= "white" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
     <!-- Component Example -->
    
+      <v-row class="hidden-sm-and-down">
       <v-spacer></v-spacer>
       <v-card
-      color="blue lighten-3"
+      color="#E1E8EE"
       height="30">
-      <p>New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
+      <p span class="policy">New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
      </v-card>
+      </v-row>
    
    <!-- extends the height of the nav bar -->
     <template v-slot:extension>
+      <v-row class="hidden-sm-and-down">
        <RoyalSundaramlogo/>
       <v-spacer></v-spacer>
 
      <!-- Global nav bar buttons -->
+      
+   <v-col cols="12" sm="1">
       <Insurancedropdown/>
+      </v-col>
+  
+     
       <!-- <Insurance/> -->
+        <v-col cols="12" sm="1">
+       
       <Aboutusbutton/>
+        </v-col>
+      
+     
+       <v-col cols="12" sm="1" > 
       <Instarenewbutton/>
+       </v-col>
+
+       <v-col cols="12" sm="1">
       <Contactusbutton/>
+       </v-col>
+
+       <v-col cols="12" sm="1">
       <Blogsbutton/>
+       </v-col>
+
       <Signinbutton/>
+       
+    
        <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon color="black">mdi-magnify</v-icon>
       </v-btn>
+      </v-row>
+         
+
+      <v-row class="hidden-md-and-up">
+        <v-col sm="10">
+       <RoyalSundaramlogo/>
+        </v-col>
+        <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0">
+          <Menubar2/>
+        </v-col>
+      </v-row>
+
    </template>
 
     
@@ -68,8 +108,11 @@ export default {}
     border: 1px solid;
   }
 
+  .policy {
+    color: #707070;
+}
    #inspire {
-   background-color: rgb(205, 231, 248)
+   background-color:white
 ;
 
     color: black;

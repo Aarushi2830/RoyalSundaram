@@ -11,7 +11,7 @@
     <v-row justify="center">
 
     <!-- occupies four colums in a small device -->
-      <v-col cols="12" sm="4">
+      <v-col cols="12" sm="10">
 
     <!-- One can edilt their selection by choosing another item from the dropdown in an editable overflow dropdown buttons -->
         <v-overflow-btn
@@ -23,7 +23,7 @@
         ></v-overflow-btn>
       </v-col>
       
-       <v-col cols="12" sm="4">
+       <v-col cols="12" sm="10">
 
         <v-overflow-btn
           class="my-2"

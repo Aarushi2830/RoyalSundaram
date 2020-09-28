@@ -9,7 +9,7 @@
    <!-- required property makes it compulsory for the user to fill the detail and they cannot proceed without filling it -->
    
     <v-row justify="center">
-     <v-col cols="12" sm="6" md="10">
+     <v-col cols="12" sm="10" md="10">
           <v-text-field
             :rules="nameRules"
             label="Name"
@@ -20,7 +20,7 @@
     </v-row>
 
     <v-row justify="center">
-     <v-col cols="12" sm="6" md="10">
+     <v-col cols="12" sm="10" md="10">
           <v-text-field
             :rules="emailRules"
             label="Email id."
@@ -31,7 +31,8 @@
     </v-row>
 
      <v-row justify="center">
-     <v-col cols="12" sm="6" md="10">
+     <v-col cols="12" sm="10" md="10">
+       
           <v-text-field
            :rules="numberRules"
             label="Number"
@@ -44,7 +45,7 @@
       <v-row justify="center">
     <v-col cols="12" sm="10">
       <v-card
-      color="black"
+      color="grey darken-4"
       class="pa 1"
       >
     <v-checkbox
