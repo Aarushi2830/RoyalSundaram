@@ -18,12 +18,14 @@
       <v-card
       color="#E1E8EE"
       height="30">
+      <!-- p span class for changing the colour of the text -->
       <p span class="policy">New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
      </v-card>
       </v-row>
    
    <!-- extends the height of the nav bar -->
     <template v-slot:extension>
+      <!-- the nav bar remains hidden in sm and xs devices and is only visible in md and lg devices -->
       <v-row class="hidden-sm-and-down">
        <RoyalSundaramlogo/>
       <v-spacer></v-spacer>
@@ -67,6 +69,7 @@
         <v-col sm="10">
        <RoyalSundaramlogo/>
         </v-col>
+        <!-- Instead of a nav bar the contents are organised in a dropdown under the menu bar button which is only visible in sm ans xs devices and hidden in md -->
         <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0">
           <Menubar2/>
         </v-col>

@@ -1,5 +1,6 @@
 <template>
   <div class="text-center">
+    <!-- characteristic of the dropdown -->
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
@@ -12,6 +13,7 @@
         </v-btn>
       </template>
       <v-list>
+        <!-- loop for arranging item within the button -->
         <v-list-item
           v-for="(item, index) in items"
           :key="index"
