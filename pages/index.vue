@@ -17,7 +17,10 @@
            </v-col>
            <!-- Hidden in sm and xs devices and visible in md and lg devices -->
            <v-col cols="12" lg=" 9" md="8" sm="12" class="hidden-sm-and-down">
-              <h2>Leisure Trip</h2>
+              <h2>
+              <p span class="leisure2">
+              Leisure Trip
+              </p></h2>
              <StepsForm/>
              <!-- Hidden in md and lg and visible in sm and xs -->
               </v-col>
@@ -54,6 +57,9 @@
 <style> 
 /* hex number used to change the colour of the text */
 .leisure {
+  color: #656464;
+}
+.leisure2 {
   color: #656464;
 }
 </style>
