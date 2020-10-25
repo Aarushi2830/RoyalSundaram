@@ -8,11 +8,19 @@
    <!-- textfield-> outlined -->
    <!-- required property makes it compulsory for the user to fill the detail and they cannot proceed without filling it -->
    
+   
     <v-row justify="center">
      <v-col cols="12" sm="10" md="10">
-          <v-text-field
+          <!-- <v-text-field
             :rules="nameRules"
             label="Name"
+            outlined
+            required
+          ></v-text-field> -->
+           <v-text-field
+           :rules="nameRules"
+            label="Name"
+            single-line
             outlined
             required
           ></v-text-field>
@@ -21,9 +29,16 @@
 
     <v-row justify="center">
      <v-col cols="12" sm="10" md="10">
-          <v-text-field
+          <!-- <v-text-field
             :rules="emailRules"
             label="Email id."
+            outlined
+            required
+          ></v-text-field> -->
+           <v-text-field
+           :rules="emailRules"
+            label="Email id."
+            single-line
             outlined
             required
           ></v-text-field>
@@ -33,9 +48,16 @@
      <v-row justify="center">
      <v-col cols="12" sm="10" md="10">
        
+          <!-- <v-text-field
+           :rules="numberRules"
+            label="Number"
+            outlined
+            required
+          ></v-text-field> -->
           <v-text-field
            :rules="numberRules"
             label="Number"
+            single-line
             outlined
             required
           ></v-text-field>
@@ -44,10 +66,10 @@
      
       <v-row justify="center">
     <v-col cols="12" sm="10">
-      <v-card
+      <!-- <v-card
       color="grey darken-4"
       class="pa 1"
-      >
+      > -->
     <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
@@ -56,7 +78,7 @@
       required
     >
     </v-checkbox>
-        </v-card>
+        <!-- </v-card> -->
      </v-col>
      </v-row>
     </v-container>

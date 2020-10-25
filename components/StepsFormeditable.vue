@@ -51,7 +51,7 @@
         :elevation="0"
           class="mb-12 "
           color="grey darken-4"
-          height="570px"
+          height="400px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
@@ -72,23 +72,7 @@
            <v-col cols="12" sm="12" md="12">
         <!-- <Numberoftravellers/> -->
       
-  <v-container fluid>
-    <v-row justify="center">
-      <v-col cols="12" sm="10">
-
-      <p>Select the number of Travellers</p>
-      
-    
-        <v-select
-          v-model="select"
-          :items="items"
-        
-         
-        ></v-select>
-      </v-col>
-    </v-row>
-  </v-container>
-
+  
          </v-col>
          </v-row>
          </v-card>
@@ -117,12 +101,80 @@
         :elevation="0"
           class="mb-12"
           color="grey darken-4"
-          height="530px"
+          height="950px"
           editable
         >
          <v-row justify="center">
            <v-col cols="12" sm="12" md="12" >
-        <Agedropdown/>
+        <!-- <Agedropdown/> -->
+
+         <div>
+    <!-- <v-card class="mb-4"> -->
+      <v-row justify="center">
+       <v-col cols="12" sm="11">
+          <p>Select the number of travellers</p>
+      <v-card-text>
+        <v-select
+          v-model="text"
+          :items="[2, 3, 4, 5, 6]"
+          label="Number of travellers"
+        ></v-select>
+      </v-card-text>
+       </v-col>
+      </v-row>
+    <!-- </v-card> -->
+     <v-row justify="center">
+        <v-col  cols="12" sm="11">
+           <p>The age of the travellers</p>
+    <v-text-field
+     label="The age of the traveller"
+      single-line
+     item-value="text"
+     v-model="f1"
+     outlined
+     v-for="n in text"
+     :key="`${n}-content`"> 
+            Step {{ n }}
+          </v-text-field>
+        </v-col>
+     </v-row>
+
+          <v-divider
+            v-if="n !== steps"
+            :key="n"
+          ></v-divider>
+           
+          <v-row justify="center">
+       <v-col cols="12" sm="9">
+        <v-checkbox
+      v-model="checkbox"
+      :rules="[v => !!v || 'You must agree to continue!']"
+      label="Are the proposed person(s) currently in India and planning to travel to any foreign location?"
+      class="pa-1"
+      required
+    ></v-checkbox>
+    
+     <v-checkbox
+      v-model="checkbox"
+      :rules="[v => !!v || 'You must agree to continue!']"
+      label="Do all traveller(s) fulfill the eligibility criteria?
+Indian citizens who hold Indian Passport.
+Non Resident Indians who hold Indian Passport.
+Dual Passport holders who also hold Indian Passport.
+Foreign Nationals staying in India on work permit
+OCI Cardholders."
+      class="pa-1"
+      required
+    ></v-checkbox>
+  
+      </v-col>
+    </v-row>
+   
+     
+
+     
+        
+  </div>
   
   
       </v-col>
@@ -155,32 +207,35 @@
       return {
         e1: 1,
      
-        select: { text: '1' },
-        items: [
-        { text: '1' },
-        { text: '2'  },
-        { text: '3'  },
-        { text: '4'  },
-        { text: '5' },
-        ],
-    data: () => ({
-      dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana'],
-      dropdown_icon: [
-        { text: 'list', callback: () => console.log('list') },
-        { text: 'favorite', callback: () => console.log('favorite') },
-        { text: 'delete', callback: () => console.log('delete') },
-      ],
-      dropdown_edit: [
+      
+        f1: 1,
+        text: 2,
+
+        dropdown_edit: [
         { text: '20' },
         { text: '21' },
         { text: '22' },
         { text: '23' },
         { text: '24' },
       ],
-    }),
-  }
-  
-    },
-  }
+    //   }
+    // },
 
+    // watch: {
+    //   steps (val) {
+    //     if (this.e1 > val) {
+    //       this.e1 = val
+    //     }
+    //   },
+    // },
+
+    // methods: {
+    //   nextStep (n) {
+    //     if (n === this.steps) {
+    //       this.e1 = 1
+    //     } else {
+    //       this.e1 = n + 1
+         }
+       },
+     }
 </script>

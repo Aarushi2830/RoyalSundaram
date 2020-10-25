@@ -16,6 +16,7 @@
       <v-row class="hidden-sm-and-down">
       <v-spacer></v-spacer>
       <v-card
+       :elevation="0"
       color="#E1E8EE"
       height="30">
       <!-- p span class for changing the colour of the text -->
@@ -32,35 +33,39 @@
 
      <!-- Global nav bar buttons -->
       
-   <v-col cols="12" sm="1">
+   <v-col cols="12" sm="1"
+    class="pt-6">
+     
       <Insurancedropdown/>
       </v-col>
   
      
       <!-- <Insurance/> -->
-        <v-col cols="12" sm="1">
+        <v-col cols="12" sm="1"  class="pt-6">
        
       <Aboutusbutton/>
         </v-col>
       
      
-       <v-col cols="12" sm="1" > 
+       <v-col cols="12" sm="1"  class="pt-6"> 
       <Instarenewbutton/>
        </v-col>
 
-       <v-col cols="12" sm="1">
+       <v-col cols="12" sm="1"  class="pt-6">
       <Contactusbutton/>
        </v-col>
 
-       <v-col cols="12" sm="1">
+       <v-col cols="12" sm="1"  class="pt-6">
       <Blogsbutton/>
        </v-col>
-
+      
       <Signinbutton/>
        
     
        <v-btn icon>
+          <v-col class="px-3 pt-6">
         <v-icon color="black">mdi-magnify</v-icon>
+          </v-col>
       </v-btn>
       </v-row>
          

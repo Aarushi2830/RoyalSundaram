@@ -12,6 +12,7 @@
       >
         <template v-slot:activator="{ on, attrs }">
           <v-text-field
+           :rules="dateRules"
             v-model="date"
             label="Start date of the trip"
             
@@ -38,5 +39,10 @@
       date: new Date().toISOString().substr(0, 10),
       menu: false,
     }),
+     date: '',
+      dateRules: [
+        v => !!v || 'E-mail is required',
+        // v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+      ],
   }
 </script>

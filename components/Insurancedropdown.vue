@@ -6,6 +6,7 @@
           
           <template v-slot:activator="{ on: tooltip }">
             <v-btn
+             :elevation="0"
              small
               color="white"
               dark

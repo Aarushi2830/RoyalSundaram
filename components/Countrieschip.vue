@@ -2,6 +2,7 @@
   <v-combobox
     v-model="chips"
     :items="items"
+    :elevation="0"
     chips
     clearable
     label="Select the visiting country/countries"
@@ -12,6 +13,7 @@
     <template v-slot:selection="{ attrs, item, select, selected }">
       <v-chip
         v-bind="attrs"
+        :elevation="0"
         :input-value="selected"
         close
         @click="select"

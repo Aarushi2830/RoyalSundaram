@@ -1,5 +1,5 @@
 <template>
-  <v-card id="create">
+  <!-- <v-card id="create"> -->
     <v-container fluid>
       <v-row justify="center">
        <p> Or select by area </p>
@@ -23,7 +23,7 @@
       </v-row>
     </v-container>
     
-  </v-card>
+  <!-- </v-card> -->
 </template>
 
 <script>

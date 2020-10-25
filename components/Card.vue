@@ -2,10 +2,12 @@
 <v-container>
 <v-row col="12" sm=12>
   <v-card
+   :elevation="0"
     class="mx-auto"
     max-width="344"
     color="#E1E8EE"
   >
+  
   <!-- the card thumbnail -->
     <v-img
       src="CardThumbnaill.png"
@@ -22,7 +24,7 @@
    <!-- Subtile -->
     <v-card-subtitle>
       <p span class="subtitle">
-      Your search for high quality overseas travel insurance stops here
+      Your search for high quality overseas travel insurance stops here.
       </p>
     </v-card-subtitle>
 
@@ -31,7 +33,7 @@
     <v-expand-transition>
       <div v-show="show">
         <!-- the divider that divided the card through a thin line -->
-        <v-divider color="#707070"></v-divider>
+        <!-- <v-divider color="#707070"></v-divider> -->
        
        <!-- the content within the card -->
         <v-card-text>
