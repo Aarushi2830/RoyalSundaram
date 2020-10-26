@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row justify="center">
        <p> Or select by area </p>
-        <!-- <v-col cols="12" sm="6" md="4"> -->
+        <v-col cols="12" sm="10" md="4">
           <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
            <v-radio-group row v-model="transition" hide-details>
             <v-col cols="12" sm="6" md="3">
@@ -19,7 +19,7 @@
             <v-radio value="slide-x-reverse-transition" label="Excl. America Excl. Schengen"></v-radio>
             </v-col>
            </v-radio-group>
-        <!-- </v-col> -->
+        </v-col>
       </v-row>
     </v-container>
     

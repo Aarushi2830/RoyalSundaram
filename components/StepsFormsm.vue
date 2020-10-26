@@ -54,7 +54,7 @@
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
-           <v-col cols="12" sm="12" md="10">
+           <v-col cols="12" sm="11" md="10">
         <Countrieschip/><Placeselection/>
            </v-col>
             </v-row>

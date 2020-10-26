@@ -51,13 +51,18 @@
         :elevation="0"
           class="mb-12 "
           color="grey darken-4"
-          height="400px"
+          height="460px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
            <v-col cols="12" sm="10" md="11">
-        <Countrieschip/><Placeselection/>
+        <Countrieschip/>
+        <v-row justify="center">
+        <v-col cols="12" sm="3" class="ms-6" >
+        <p>Or select by area</p></v-col>
+        </v-row>
+        <Placeselectionbutton/>
            </v-col>
             </v-row>
          <v-row justify="center">
@@ -101,7 +106,7 @@
         :elevation="0"
           class="mb-12"
           color="grey darken-4"
-          height="950px"
+          height="1000px"
           editable
         >
          <v-row justify="center">
@@ -124,7 +129,7 @@
       </v-row>
     <!-- </v-card> -->
      <v-row justify="center">
-        <v-col  cols="12" sm="11">
+        <v-col  cols="12" sm="10">
            <p>The age of the travellers</p>
     <v-text-field
      label="The age of the traveller"

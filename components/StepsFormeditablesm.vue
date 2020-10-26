@@ -57,14 +57,23 @@
               <v-col cols="12" sm="4" md="4"></v-col>
                   
            <v-col cols="12" sm="10" md="11">
-        <Countrieschip/><Placeselection/>
+          <Countrieschip/>
+        <v-row justify="center">
+        <v-col cols="12" sm="4" class="ms-6" >
+        <p>Or select by area</p></v-col>
+        </v-row>
+         </v-col>
+            </v-row>
+            <v-row>
+            <v-col cols="12" sm="3">
+        <Placeselectionbutton/>
            </v-col>
             </v-row>
          <v-row justify="center">
-           <v-col cols="12" sm="12" md="5">
+           <v-col cols="12" sm="10" md="5">
         <Datepicker1/>
         </v-col>
-          <v-col cols="12" sm="4" md="5">
+          <v-col cols="12" sm="10" md="5">
         <Datepicker2/>
            </v-col>
          </v-row>
