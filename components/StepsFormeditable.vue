@@ -131,6 +131,7 @@
      <v-row justify="center">
         <v-col  cols="12" sm="10">
            <p>The age of the travellers</p>
+          
     <v-text-field
      label="The age of the traveller"
       single-line
@@ -174,11 +175,7 @@ OCI Cardholders."
   
       </v-col>
     </v-row>
-   
-     
-
-     
-        
+         
   </div>
   
   
