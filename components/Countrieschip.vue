@@ -8,6 +8,8 @@
     label="Select the visiting country/countries"
     multiple
     solo
+    color="white" light fixed app
+    
   >
   <!-- clicking on an item selects the item and clicking on close removes it -->
     <template v-slot:selection="{ attrs, item, select, selected }">

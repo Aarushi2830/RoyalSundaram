@@ -39,8 +39,10 @@
         v-model="icon"
         borderless
         group
+        color="black" light fixed app
       >
-            <v-btn value="right">
+            <v-btn value="right"
+            >
           <span class="hidden">Incl. Schengen Excl. America</span>
 
           <!-- <v-icon right>

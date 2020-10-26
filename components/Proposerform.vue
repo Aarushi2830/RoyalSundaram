@@ -20,6 +20,7 @@
            <v-text-field
            :rules="nameRules"
             label="Name"
+            color="black" light fixed app
             single-line
             outlined
             required
@@ -37,8 +38,9 @@
           ></v-text-field> -->
            <v-text-field
            :rules="emailRules"
-            label="Email id."
+            label="Email id."  
             single-line
+            color="black" light fixed app
             outlined
             required
           ></v-text-field>
@@ -58,6 +60,7 @@
            :rules="numberRules"
             label="Number"
             single-line
+            color="black" light fixed app
             outlined
             required
           ></v-text-field>
@@ -72,6 +75,7 @@
       > -->
     <v-checkbox
       v-model="checkbox"
+      color="black" light fixed app
       :rules="[v => !!v || 'You must agree to continue!']"
       label="You accept to receive calls and messages on WhatsApp and Email address"
       class="pa-1"

@@ -1,8 +1,8 @@
 <template>
-  <v-stepper v-model="e1"
+  <v-stepper v-model="e1" light
   >
     <v-stepper-header>
-      <v-stepper-step :complete="e1 > 1" step="1">Proposer's details</v-stepper-step>
+      <v-stepper-step :complete="e1 > 1" step="1"  :elevation="1">Proposer's details</v-stepper-step>
 
       <v-divider></v-divider>
 
@@ -21,7 +21,7 @@
         <v-card
         :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="460px"
           editable
         >
@@ -35,7 +35,8 @@
 <v-row justify="center">
         <v-btn 
 
-          color="primary"
+         color="#00397D"
+          dark width="100"
           @click="e1 = 2"
           
         >
@@ -50,7 +51,7 @@
         <v-card
         :elevation="0"
           class="mb-12 "
-          color="grey darken-4"
+          color="white"
           height="460px"
           editable>
             <v-row justify="center">
@@ -91,7 +92,8 @@
          Back</v-btn>
   
         <v-btn
-          color="primary"
+         color="#00397D"
+          dark width="100"
           @click="e1 = 3"
           
         >
@@ -105,7 +107,7 @@
         <v-card
         :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="1000px"
           editable
         >
@@ -123,6 +125,7 @@
           v-model="text"
           :items="[2, 3, 4, 5, 6]"
           label="Number of travellers"
+          color="black" light fixed app
         ></v-select>
       </v-card-text>
        </v-col>
@@ -136,6 +139,7 @@
      label="The age of the traveller"
       single-line
      item-value="text"
+     color="black" light fixed app
      v-model="f1"
      outlined
      v-for="n in text"
@@ -151,11 +155,13 @@
           ></v-divider>
            
           <v-row justify="center">
+            
        <v-col cols="12" sm="9">
         <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
       label="Are the proposed person(s) currently in India and planning to travel to any foreign location?"
+      color="black" light fixed app
       class="pa-1"
       required
     ></v-checkbox>
@@ -163,6 +169,7 @@
      <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
+      color="black" light fixed app
       label="Do all traveller(s) fulfill the eligibility criteria?
 Indian citizens who hold Indian Passport.
 Non Resident Indians who hold Indian Passport.
@@ -186,15 +193,18 @@ OCI Cardholders."
        <v-row justify="center">
            <v-btn text
         @click="e1 =1"
+        
         >
          Back</v-btn>
   
         <v-btn
-          color="primary"
+         color="#00397D"
+          dark width="100"
           @click="e1 = 3"
           
         >
           Continue
+       
         </v-btn>
       </v-row>
       </v-stepper-content>
@@ -241,3 +251,20 @@ OCI Cardholders."
        },
      }
 </script>
+
+<style>
+/* background colour was changed from white to lighter blue */
+#inspire {
+  background-color: white;
+}
+.v-stepper__step.primary {
+  background-color: black !important;
+  border-color: black !important;
+}
+.v-stepper__label {
+  color: black !important;
+}
+ 
+  
+</style>  
+</style>

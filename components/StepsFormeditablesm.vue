@@ -1,5 +1,5 @@
 <template>
-  <v-stepper v-model="e1"
+  <v-stepper v-model="e1" light
   >
     <v-stepper-header>
       <v-stepper-step :complete="e1 > 1" step="1">Proposer's details</v-stepper-step>
@@ -21,7 +21,7 @@
         <v-card
         :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="460px"
           editable
         >
@@ -35,8 +35,9 @@
 <v-row justify="center">
         <v-btn 
 
-          color="primary"
           @click="e1 = 2"
+           color="#00397D"
+          dark width="100"
           
         >
           Continue
@@ -50,23 +51,23 @@
         <v-card
         :elevation="0"
           class="mb-12 "
-          color="grey darken-4"
-          height="650px"
+          color="wjite"
+          height="700px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
            <v-col cols="12" sm="10" md="11">
           <Countrieschip/>
-        <v-row justify="center">
+        <!-- <v-row justify="center">
         <v-col cols="12" sm="4" class="ms-6" >
         <p>Or select by area</p></v-col>
-        </v-row>
+        </v-row> -->
          </v-col>
             </v-row>
             <v-row>
             <v-col cols="12" sm="3">
-        <Placeselectionbutton/>
+        <Placeselection/>
            </v-col>
             </v-row>
          <v-row justify="center">
@@ -95,12 +96,13 @@
          Back</v-btn>
   
         <v-btn
-          color="primary"
+        
           @click="e1 = 3"
-          
+          color="#00397D" 
+          dark width="100"
         >
           Continue
-        </v-btn>
+        </v-btn >
       </v-row>
 
       </v-stepper-content>
@@ -109,7 +111,7 @@
         <v-card
         :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="1050px"
           editable
         >
@@ -197,7 +199,8 @@ OCI Cardholders."
          Back</v-btn>
   
         <v-btn
-          color="primary"
+          color="#00397D"
+          dark width="100"
           @click="e1 = 3"
           
         >

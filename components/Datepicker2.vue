@@ -14,6 +14,7 @@
           <v-text-field
             v-model="date"
             label="End date of the trip"
+            color="black" light fixed app
             
             readonly
             v-bind="attrs"

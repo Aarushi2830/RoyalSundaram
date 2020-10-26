@@ -35,7 +35,7 @@
         <v-btn 
 
           color="primary"
-          @click="e1 = 2"
+          @click="e1 = 2" light
           
         >
           Continue
@@ -136,3 +136,5 @@
   }
   
 </script>
+
+ 

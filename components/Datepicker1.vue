@@ -15,6 +15,7 @@
            :rules="dateRules"
             v-model="date"
             label="Start date of the trip"
+            color="black" light fixed app
             
             readonly
             v-bind="attrs"
