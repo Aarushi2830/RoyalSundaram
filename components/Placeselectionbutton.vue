@@ -22,7 +22,7 @@
         </v-btn>
 
         <v-btn value="center">
-          <span class="hidden">Incl. Schengen Excl. America</span>
+          <span class="hidden">Excl. Schengen Incl. America</span>
 
           <!-- <v-icon right>
             mdi-format-align-center
@@ -43,7 +43,7 @@
       >
             <v-btn value="right"
             >
-          <span class="hidden">Incl. Schengen Excl. America</span>
+          <span class="hidden">Incl. Schengen Incl. America</span>
 
           <!-- <v-icon right>
             mdi-format-align-right
@@ -51,7 +51,7 @@
         </v-btn>
 
         <v-btn value="justify">
-          <span class="hidden">Incl. Schengen Excl. America</span>
+          <span class="hidden">Excl. Schengen Excl. America</span>
 
           <!-- <v-icon right>
             mdi-format-align-justify

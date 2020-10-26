@@ -31,7 +31,7 @@
         <!-- </v-btn> -->
 
         <v-btn value="right">
-          <span class="hidden-sm-and-down">Incl. Schengen Excl. America</span>
+          <span class="hidden-sm-and-down">Incl. Schengen Incl. America</span>
 
           <!-- <v-icon right>
             mdi-format-align-right
@@ -39,7 +39,7 @@
         </v-btn>
 
         <v-btn value="justify">
-          <span class="hidden-sm-and-down">Incl. Schengen Excl. America</span>
+          <span class="hidden-sm-and-down">Excl. Schengen Incl. America</span>
 
           <!-- <v-icon right>
             mdi-format-align-justify
