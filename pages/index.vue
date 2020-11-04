@@ -1,19 +1,27 @@
 <template>
   <div>
-    <v-content>
+    <!-- <v-col class="hidden-md-and-up">
+    <v-img
+      src="CardThumbnaill.png"
+      height="200px"
+    ></v-img>
+    </v-col> -->
+   
+      <Breadcrumb/>
       <v-container fluid style="margin=0px; padding= 0px; width=100%">
-        <v-row class="mx-md-12 mx-sm-8 mx-0">
+        <v-row class="mx-md-12 mx-sm-0 mx-0">
 
           <v-col justify=" center" cols="12" md="4" sm="4" class="hidden-md-and-up">
         <h2>
           
           <p span class="leisure">
-            <p class="font-weight-light">
+            <p class="font-weight-medium">
             Leisure Trip
           </p></h2>
           </v-col>
           <!-- <v-col sm="2" class="hidden-md-and-up"></v-col> -->
-          <v-col cols="12" lg=" 3" md="4" sm="12">
+          
+          <v-col cols="12" lg=" 3" md="4" sm="12" class="hidden-sm-and-down" >
             <Card/>
         <Leisuretripinfo/>
            </v-col>
@@ -27,8 +35,12 @@
              <!-- Hidden in md and lg and visible in sm and xs -->
               </v-col>
            <v-col cols="12" lg=" 9" md="8" sm="12" class="hidden-md-and-up" >
-             <StepsFormeditablesm/>
+             <StepsFormsm/>
            </v-col>
+
+            <v-col cols="12" lg=" 9" md="8" sm="12" class="hidden-md-and-up" >
+              <Infopanel/>
+            </v-col>
             <!-- <v-col cols="12" lg=" 9" md="8" sm="12" class="hidden-md-and-up">
               <StepsFormxs/>
             </v-col> -->
@@ -46,7 +58,7 @@
       </v-col>
       </v-row> -->
       </v-container>
-   </v-content>
+
   </div>
   
 </template>

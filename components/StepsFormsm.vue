@@ -1,5 +1,5 @@
 <template>
-  <v-stepper v-model="e1"
+  <v-stepper v-model="e1" light
   >
     <v-stepper-header>
       <v-stepper-step :complete="e1 > 1" step="1">Proposer's details</v-stepper-step>
@@ -19,8 +19,9 @@
     <v-stepper-items>
       <v-stepper-content step="1">
         <v-card
+        :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="500px"
           editable
         >
@@ -34,8 +35,10 @@
 <v-row justify="center">
         <v-btn 
 
-          color="primary"
+         
           @click="e1 = 2" light
+            color="#00397D" 
+          dark width="260"
           
         >
           Continue
@@ -47,15 +50,16 @@
         <!-- <v-row justify="center">
            <v-col cols="12" sm="12" md="12" xs="12"> -->
         <v-card
+        :elevation="0"
           class="mb-12 "
-          color="grey darken-4"
+          color="white"
           height="800px"
           editable>
             <v-row justify="center">
               <v-col cols="12" sm="4" md="4"></v-col>
                   
            <v-col cols="12" sm="11" md="10">
-        <Countrieschip/><Placeselection/>
+        <Placeselection/>
            </v-col>
             </v-row>
          <v-row justify="center">
@@ -82,8 +86,10 @@
          Back</v-btn>
   
         <v-btn
-          color="primary"
+         
           @click="e1 = 3"
+            color="#00397D" 
+          dark width="200"
           
         >
           Continue
@@ -94,8 +100,9 @@
 
       <v-stepper-content step="3">
         <v-card
+        :elevation="0"
           class="mb-12"
-          color="grey darken-4"
+          color="white"
           height="620px"
           editable
         >
@@ -112,12 +119,14 @@
         >
          Back</v-btn>
   
-        <v-btn
-          color="primary"
-          @click="e1 = 3"
+        <v-btn 
+         href= "Loader"
+          color="#00397D" 
+          dark width="200"
           
         >
           Continue
+          
         </v-btn>
       </v-row>
       </v-stepper-content>

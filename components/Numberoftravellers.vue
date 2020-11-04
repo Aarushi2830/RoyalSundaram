@@ -1,13 +1,15 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <v-col cols="12" sm="10">
+      <v-col cols="12" sm="12">
 
       <p>Select the number of Travellers</p>
     
         <v-select
+         outlined
           v-model="select"
           :items="items"
+          light
         
          
         ></v-select>

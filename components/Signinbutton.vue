@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" sm="1" class="mx-0 px-1 pt-4">
+  <v-col cols="12" sm="1" class="mt-0 px-1 pt-2">
     <v-btn 
      :elevation="0"
     small rounded color="#A4C6EF" dark>sign in</v-btn>

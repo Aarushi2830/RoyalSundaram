@@ -2,17 +2,25 @@
   <div class="text-center">
     <!-- characteristic of the dropdown -->
     <v-menu offset-y>
-      <template v-slot:activator="{ on, attrs }">
+      <template v-slot:activator="{ on, attrs }" light>
+         <v-col sm="0" class=" mb-7 ps-0">
         <v-btn
-          color="#00397D"
-          dark
+        :elevation="0"
+          color="white"
+           dark width="5"
+          light
           v-bind="attrs"
-          v-on="on"
-        >
-          Menu
+          v-on="on">
+           <v-app-bar-nav-icon
+           color="#656464"
+            v-bind="attrs"
+          v-on="on"></v-app-bar-nav-icon>
         </v-btn>
+         </v-col>
       </template>
+    
       <v-list>
+        
         <!-- loop for arranging item within the button -->
         <v-list-item
           v-for="(item, index) in items"

@@ -1,9 +1,6 @@
 <template>
-  <div class="hidden-md-and-up">
-    <v-img
-      src="CardThumbnaill.png"
-      height="180px"
-    ></v-img>
+  <div class="hidden-sm-and-down">
+
     <!-- </v-col> -->
 
     <v-breadcrumbs :items="items">

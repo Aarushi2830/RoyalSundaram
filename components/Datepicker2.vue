@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="12" sm="12" md="12">
+    <v-col cols="12" sm="10" md="12">
       <v-menu
         ref="menu"
         v-model="menu"
@@ -9,12 +9,14 @@
         transition="scale-transition"
         offset-y
         min-width="290px"
+         outlined
+         light
       >
         <template v-slot:activator="{ on, attrs }">
           <v-text-field
             v-model="date"
             label="End date of the trip"
-            color="black" light fixed app
+            color="white" light fixed app
             
             readonly
             v-bind="attrs"

@@ -20,6 +20,7 @@
           label="Traveller 1"
           editable 
           item-value="text"
+          light
         ></v-overflow-btn>
       </v-col>
       
@@ -31,6 +32,7 @@
           label="Traveller 2"
           editable
           item-value="text"
+          light
         ></v-overflow-btn>
        </v-col>
    <!-- The required code prevents the users from skipping it before going to the next step  -->

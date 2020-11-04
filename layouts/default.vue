@@ -27,35 +27,52 @@
    <!-- extends the height of the nav bar -->
     <template v-slot:extension>
       <!-- the nav bar remains hidden in sm and xs devices and is only visible in md and lg devices -->
+          <v-row class="hidden-md-and-up">
+       <!-- <v-col sm="0" class="mb-sm-6 mb-4 mx-sm-1 mx-0"> -->
+          <Menubar2/>
+       <!-- </v-col> -->
+          </v-row>
+<!--           
       <v-row class="hidden-sm-and-down">
+        <v-col sm="0" class=" mb-6 pr-8 mr-8"> -->
+           <v-col class="mr-10 ml-n10">
        <RoyalSundaramlogo/>
+           </v-col>
+        <!-- </v-col> -->
       <v-spacer></v-spacer>
+      <v-row class="hidden-md-and-up">
+       <v-btn icon>
+          <v-col class="mb-8 pt-6 ml-16 pl-16">
+        <v-icon color="black">mdi-magnify</v-icon>
+          </v-col>
+      </v-btn>
+      </v-row>
 
      <!-- Global nav bar buttons -->
       
    <v-col cols="12" sm="1"
-    class="pt-6">
+    class="mt-0 pt-6">
      
       <Insurancedropdown/>
       </v-col>
   
      
       <!-- <Insurance/> -->
-        <v-col cols="12" sm="1"  class="pt-6">
+        <v-col cols="12" sm="1"  class="mt-0 pt-6">
        
       <Aboutusbutton/>
         </v-col>
       
      
-       <v-col cols="12" sm="1"  class="pt-6"> 
+       <v-col cols="12" sm="1"  class="mt-0 pt-6"> 
       <Instarenewbutton/>
        </v-col>
 
-       <v-col cols="12" sm="1"  class="pt-6">
+       <v-col cols="12" sm="1"  class="mt-0 pt-6">
       <Contactusbutton/>
        </v-col>
 
-       <v-col cols="12" sm="1"  class="pt-6">
+       <v-col cols="12" sm="1"  class="mt-0 pt-6">
       <Blogsbutton/>
        </v-col>
       
@@ -63,11 +80,11 @@
        
     
        <v-btn icon>
-          <v-col class="px-3 pt-6">
+          <v-col class="mt-0 pt-3">
         <v-icon color="black">mdi-magnify</v-icon>
           </v-col>
       </v-btn>
-      </v-row>
+      <!-- </v-row> -->
          
 
       <v-row class="hidden-md-and-up">
@@ -75,9 +92,9 @@
        <RoyalSundaramlogo/>
         </v-col>
         <!-- Instead of a nav bar the contents are organised in a dropdown under the menu bar button which is only visible in sm ans xs devices and hidden in md -->
-        <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0">
+        <!-- <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0">
           <Menubar2/>
-        </v-col>
+        </v-col> -->
       </v-row>
 
    </template>
@@ -92,7 +109,7 @@
     <!-- Body -->
     <v-body color="blue" app>
     <v-content light>
-      <Breadcrumb/>
+      <Breadcrumbmd/><Breadcrumb/>
       <nuxt /> 
     </v-content>
     </v-body>
