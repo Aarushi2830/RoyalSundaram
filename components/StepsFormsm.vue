@@ -15,14 +15,14 @@
     </v-stepper-header>
 
     
-
+     <!-- The elevation of the cards within the card is removed -->
     <v-stepper-items>
       <v-stepper-content step="1">
         <v-card
         :elevation="0"
           class="mb-12"
           color="white"
-          height="500px"
+          height="540px"
           editable
         >
           <v-row justify="center">
@@ -33,6 +33,7 @@
             </v-card>
 
 <v-row justify="center">
+  <!-- The colour of the butoon and the size is altered here  -->
         <v-btn 
 
          
@@ -119,6 +120,7 @@
         >
          Back</v-btn>
   
+  <!-- The continue button of the last step is linked to another page with a loder to show the continuity -->
         <v-btn 
          href= "Loader"
           color="#00397D" 

@@ -2,7 +2,7 @@
   <!-- <v-card id="create"> -->
     <v-container fluid>
       <v-row justify="center">
-       <p> Or select by area </p>
+       <p> Select the Travelling place </p>
         <v-col cols="12" sm="10" md="4">
           <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
            <v-radio-group row v-model="transition" hide-details>

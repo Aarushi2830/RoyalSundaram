@@ -3,6 +3,7 @@
     <!-- characteristic of the dropdown -->
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }" light>
+        <!-- Margin and padding to maintain the spacing between the components -->
          <v-col sm="0" class=" mb-7 ps-0">
         <v-btn
         :elevation="0"

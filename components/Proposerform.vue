@@ -10,13 +10,14 @@
    
    
     <v-row justify="center">
-     <v-col cols="12" sm="10" md="10">
+     <v-col cols="12" sm="10" md="10" class="mb-0 pb-0">
           <!-- <v-text-field
             :rules="nameRules"
             label="Name"
             outlined
             required
           ></v-text-field> -->
+            <p> Name </p>
            <v-text-field
            :rules="nameRules"
             label="Name"
@@ -29,13 +30,14 @@
     </v-row>
 
     <v-row justify="center">
-     <v-col cols="12" sm="10" md="10">
+     <v-col cols="12" sm="10" md="10" class="mb-0 pb-0">
           <!-- <v-text-field
             :rules="emailRules"
             label="Email id."
             outlined
             required
           ></v-text-field> -->
+            <p> Email id. </p>
            <v-text-field
            :rules="emailRules"
             label="Email id."  
@@ -48,7 +50,7 @@
     </v-row>
 
      <v-row justify="center">
-     <v-col cols="12" sm="10" md="10">
+     <v-col cols="12" sm="10" md="10" class="mb-0 pb-0">
        
           <!-- <v-text-field
            :rules="numberRules"
@@ -56,6 +58,7 @@
             outlined
             required
           ></v-text-field> -->
+          <p> Number </p>
           <v-text-field
            :rules="numberRules"
             label="Number"
@@ -68,7 +71,7 @@
      </v-row>  
      
       <v-row justify="center">
-    <v-col cols="12" sm="10">
+    <v-col cols="12" sm="10" class="mb-0 pb-0">
       <!-- <v-card
       color="grey darken-4"
       class="pa 1"

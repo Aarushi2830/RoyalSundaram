@@ -4,7 +4,7 @@
      <div>
        <!-- Using <p> to give headings -->
          <!-- p class defines different aspects of the text like the weight, opacity, allignment  -->
-        <p class="font-weight-regular">Select the age group of the travellers</p>
+        <p class="font-weight-regular">Select the age of the travellers</p>
         </div>
         </v-row>
 

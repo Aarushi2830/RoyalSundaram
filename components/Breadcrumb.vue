@@ -1,4 +1,5 @@
 <template>
+<!-- The Image is added in the breandcrumb componenet to make it place above the breadcumb like in th xd flle -->
   <div class="hidden-md-and-up">
     <v-img
       src="CardThumbnaill.png"

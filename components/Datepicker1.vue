@@ -1,6 +1,7 @@
 <template>
   <v-row>
     <v-col cols="12" sm="10" md="12" lg="11">
+      <!-- Light change the colour of the datepicker card  -->
       <v-menu
         ref="menu"
         v-model="menu"

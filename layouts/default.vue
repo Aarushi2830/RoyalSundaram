@@ -109,7 +109,8 @@
     <!-- Body -->
     <v-body color="blue" app>
     <v-content light>
-      <Breadcrumbmd/><Breadcrumb/>
+      <Breadcrumbmd/>
+      <!-- <Breadcrumb/> -->
       <nuxt /> 
     </v-content>
     </v-body>
