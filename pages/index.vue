@@ -7,7 +7,6 @@
     ></v-img>
     </v-col> -->
    
-      <Breadcrumb/>
       <v-container fluid style="margin=0px; padding= 0px; width=100%">
         <v-row class="mx-md-12 mx-sm-0 mx-0">
 
