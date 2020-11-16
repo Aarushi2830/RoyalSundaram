@@ -1,65 +1,47 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="12" lg="6">
+    <v-row justify="center" >
+      <v-col cols="12" md="6" sm=8>
+        
         <v-menu
+        color="black" light fixed app
           ref="menu1"
           v-model="menu1"
           :close-on-content-click="false"
-          transition="scale-y-transition"
-          offset-y
-          max-width="290px"
-          min-width="290px"
-        >
-        <!-- first date picker defines the start date of the trip -->
-        <!-- the date is formated to the current day -->
-        <!-- the date get reformatted by clicking on it noticable by the blur around it  -->
-          <template v-slot:activator="{ on, attrs }">
-            <v-text-field
-              v-model="date"
-              label="Start date of the trip"
-              hint="MM/DD/YYYY"
-              persistent-hint
-              v-bind="attrs"
-              @blur="date = parseDate(date)"
-              v-on="on"
-            ></v-text-field>
-          </template>
-          <v-date-picker v-model="date" no-title @input="menu1 = false"></v-date-picker>
-        </v-menu>
-
-      </v-col>
-<!-- Scale transition provides with a smooth transition of the opening and closing of the datepicker -->
-  
-      <v-col cols="12" lg="6">
-        <v-menu
-          v-model="menu2"
-          :close-on-content-click="false"
-          transition="slide-y-transition"
+          transition="scale-transition"
           offset-y
           max-width="290px"
           min-width="290px"
         >
           <template v-slot:activator="{ on, attrs }">
+            <!-- text field with label, hint and persistent hint -->
+            <!-- v-bind used to pass down the attributes...used in case of data changing -->
+            <!-- blur is used to loose focus ...here date element loses focus when changed to another -->
+          
+            <!-- changed the colour of label and text field -->
             <v-text-field
-              v-model="date"
-              label="End date of the trip"
-              hint="MM/DD/YYYY"
+             
+              v-model="dateFormatted"
+              color="black" light fixed app
+             
+              label="Date of Birth of Insured"
+              hint="MM/DD/YYYY format"
               persistent-hint
-              readonly
               v-bind="attrs"
-                @blur="date = parseDate(date)"
+              @blur="date = parseDate(dateFormatted)"
               v-on="on"
+              outlined
             ></v-text-field>
+           
           </template>
-          <v-date-picker v-model="date" no-title @input="menu2 = false"></v-date-picker>
+          <v-date-picker v-model="date" no-title @input="menu1 = false" color="blue"></v-date-picker>
         </v-menu>
         
       </v-col>
+
     </v-row>
   </v-container>
 </template>
-
 
 <script>
   export default {
@@ -67,15 +49,7 @@
       date: new Date().toISOString().substr(0, 10),
       dateFormatted: vm.formatDate(new Date().toISOString().substr(0, 10)),
       menu1: false,
-      menu2: false,
     }),
-    
-
-    computed: {
-      computedDateFormatted () {
-        return this.formatDate(this.date)
-      },
-    },
 
     watch: {
       date (val) {
@@ -99,3 +73,5 @@
     },
   }
 </script>
+<style>
+</style>
